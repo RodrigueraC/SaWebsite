@@ -1,0 +1,491 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-y: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.container > section {
+    scroll-snap-align: start;
+}
+
+.gotop {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: white;
+    bottom: 10px;
+    right: 50%;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: #313131;
+    font-size: 22px;
+    border-radius: 50px;
+    z-index: 1;
+}
+
+.home-1 {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    position: relative;
+    z-index: 5;
+}
+
+.logo-holder {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.title-center {
+    position: absolute;
+    padding-bottom: 45px;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 48px;
+    padding-top: 40px;
+    color: white;
+    z-index: 7;
+    display: flex;
+}
+
+.text-menu:hover {
+    color: #6d6d6d;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar {
+    width: 45vh;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: -500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.navbar .colorchange {
+    color: #313131;
+}
+
+.menu-text {
+    color: #313131;
+}
+
+.change {
+    left: 0;
+}
+
+.nav-list {
+    text-align: left;
+    font-size: small;
+}
+
+.nav-item-principal {
+    list-style: none;
+    margin: 25px;
+    letter-spacing: 1px;
+}
+
+.nav-item-child {
+    list-style: none;
+    margin: 15px;
+    margin-left: 60px;
+    letter-spacing: 1px;
+}
+
+.nav-item-principal:hover {
+    color: #6d6d6d;
+    cursor: pointer;
+}
+
+.nav-item-child:hover {
+    color: #6d6d6d;
+    cursor: pointer;
+}
+
+.top-links {
+    width: 100%;
+    display: grid;
+    position: absolute;
+    padding-left: 35px;
+    padding-top: 75px;
+    justify-content: center;
+    z-index: 2;
+}
+
+.about-me {
+    grid-column: 1;
+    grid-row: 1;
+    text-decoration: none;
+    color: white;   
+}
+
+.about-me:hover {
+    color: #6d6d6d;
+    text-decoration: none;
+}
+
+.works:hover {
+    color: #6d6d6d;
+    text-decoration: none;
+}
+
+.works {
+    padding-top: 25px;
+    grid-column: 1;
+    grid-row: 2;
+    text-decoration: none;
+    color: white; 
+}
+
+.home-1 .right-buttons {
+    position: absolute;
+    right: 0;
+    top: 70px;
+    justify-content: center;
+    align-items: center;
+    padding-right: 95px;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.home-1 .right-buttons li { 
+    margin-bottom: 10px;
+    list-style: none;
+    padding-bottom: 100px;
+}
+
+.home-1 a{
+    text-decoration: none;
+    color: #656565;
+    cursor: pointer;
+}
+
+.home-1 a:hover {
+    color: #6d6d6d;
+    text-decoration: none;
+}
+
+.home-1 a.active {
+    text-decoration: none;
+    color: #393939;
+}
+
+.bottom-links {
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    position: absolute;
+    padding: 75px;
+    justify-content: center;
+    z-index: 2;
+}
+
+.email {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 75px;
+    color: white;
+    z-index: 2;
+}
+
+.home-1 .column h1 {
+    padding-bottom: 35px;
+    padding-left: 30px;
+    font-size: 80px;
+    margin-right: 50px;
+}
+
+.home-1 .column img {
+    height: 150px;
+    width: 150px;
+    opacity: 40%;
+}
+
+.home-1 .column hr.solid {
+    border-top: 2px solid #bbb;
+    width: 470px;
+}
+
+.home-1 .column-2 {
+    flex: 50%;
+}
+
+.home-1 .column-2 p {
+    margin-bottom: 4rem;
+    margin-right: 12rem;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    line-height: 1.4;
+    padding-top: 270px;
+    padding-left: 120px;
+    font-weight: 500;
+}
+
+.home-1 .row {
+    display: flex;
+    padding: 100px;
+    color: #A3A3A3;
+}
+
+.home-1 .column {
+    flex: 50%;
+    align-items: center;
+}
+
+.home-3 {
+    height: 120vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+}
+
+.home-3 .column {
+    padding-top: 10px;
+}
+
+.home-3 .column-2 {
+    padding-top: 50px;
+}
+
+.home-3 .column p {
+    margin-bottom: 5rem;
+    margin-right: 10rem;
+    font-size: 14px;
+    letter-spacing: 1.3px;
+    line-height: 1.5;
+    padding-top: 80px;
+    padding-left: 235px;
+    font-weight: 400;
+}
+
+.home-3 .column hr.solid {
+    border-top: 2px solid #bbb;
+    width: 470px;
+}
+
+.home-3 .column-2 {
+    padding: 70px;
+    flex: 50%;
+}
+
+.home-3 .column-2 p {
+    margin-bottom: 2rem;
+    margin-right: 15rem;
+    font-size: 14px;
+    letter-spacing: 1.3px;
+    line-height: 1.5;
+    padding-top: 20px;
+    padding-right: 20px;
+    bottom: 0;
+    font-weight: 400;
+}
+
+.home-3 .row {
+    display: flex;
+    color: #A3A3A3;
+}
+
+.home-3 .column {
+    flex: 50%;
+    align-items: center;
+}
+
+.home-4 {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    background-image: url("../../imgs/projetopessoal/Zinebrabas/zinebrabas/imgpagina/SCARRARD-Portfolio_Brabas\ 01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.home-5 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    background-image: url("../../imgs/projetopessoal/Zinebrabas/zinebrabas/imgpagina/SCARRARD-Portfolio_Brabas\ 02.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.home-6 {
+    height: 100vh;
+    width: 100%;
+    background-color: #e3ded1;
+    display: flex;
+    background-image: url("../../imgs/projetopessoal/Zinebrabas/zinebrabas/imgpagina/SCARRARD-Portfolio_Brabas\ 03.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.home-7 {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    background-image: url("../../imgs/projetopessoal/Zinebrabas/zinebrabas/imgpagina/SCARRARD-Portfolio_Brabas\ 04.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.home-8 {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    background-image: url("../../imgs/projetopessoal/Zinebrabas/zinebrabas/imgpagina/SCARRARD-Portfolio_Brabas\ 05.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.home-9 {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    background-image: url("../../imgs/projetopessoal/Zinebrabas/zinebrabas/imgpagina/SCARRARD-Portfolio_Brabas\ 06.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.home-10 {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    background-image: url("../../imgs/projetopessoal/Zinebrabas/zinebrabas/imgpagina/SCARRARD-Portfolio_Brabas\ 07.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.home-11 {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    background-image: url("../../imgs/projetopessoal/Zinebrabas/zinebrabas/imgpagina/SCARRARD-Portfolio_Brabas\ 08.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.home-12 {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    background-image: url("../../imgs/projetopessoal/Zinebrabas/zinebrabas/imgpagina/SCARRARD-Portfolio_Brabas\ 09.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.home-13 {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    background-image: url("../../imgs/projetopessoal/Zinebrabas/zinebrabas/imgpagina/SCARRARD-Portfolio_Brabas\ 10.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.home-14 {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    background-image: url("../../imgs/projetopessoal/Zinebrabas/zinebrabas/imgpagina/SCARRARD-Portfolio_Brabas\ 11.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.home-15 {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    background-image: url("../../imgs/projetopessoal/Zinebrabas/zinebrabas/imgpagina/SCARRARD-Portfolio_Brabas\ 12.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.home-16 {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    background-image: url("../../imgs/projetopessoal/Zinebrabas/zinebrabas/imgpagina/SCARRARD-Portfolio_Brabas\ 13.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.home-17 {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    background-image: url("../../imgs/projetopessoal/Zinebrabas/zinebrabas/imgpagina/SCARRARD-Portfolio_Brabas\ 14.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.home-18 {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    background-image: url("../../imgs/projetopessoal/Zinebrabas/zinebrabas/imgpagina/SCARRARD-Portfolio_Brabas\ 15.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
